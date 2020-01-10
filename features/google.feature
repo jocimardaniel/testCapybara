@@ -5,3 +5,4 @@ Scenario: Testing Google Search
 	When I search for Capybara
 	Then the Capybara Github page is displayed
 	
+Scenario: Testing Google
