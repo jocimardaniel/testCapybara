@@ -7,9 +7,9 @@ When("I search for {string}") do |search|
 
   click_button "Busca"
 
-  sleep 10
+  sleep 5
 end
 
-Then("the results are displayed") do
-  pending # Write code here that turns the phrase above into concrete actions
+Then("the results for {string} are displayed") do |search|
+  expect(page).to have_content search
 end
